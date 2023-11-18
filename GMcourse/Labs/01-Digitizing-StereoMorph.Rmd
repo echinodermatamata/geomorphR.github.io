@@ -27,8 +27,8 @@ First, let´s see how one can digitize fixed landmarks. These correspond to well
 In this script, digitized data are stored in another folder, called Shapes
 To digitize, e.g., five fixed landmarks, run: 
 ```{r eval=FALSE}
-digitizeImages(image.file='Data/Fish-Images', shapes.file='Data/Fish-Shapes-ex',
-               landmarks.ref=paste("LM", c(1:5), sep=""))
+digitizeImages(image.file='wing_pics', shapes.file='wing_pics',
+               landmarks.ref=paste("LM", c(1:19), sep=""))
 ```
 
 To digitize for the first time:
@@ -70,7 +70,7 @@ The easiest way to obtain sliding semilandmarks to describe the shape of curves,
 2. Re-open the digitizer to record the curves
 
 ```{r eval=FALSE}
-digitizeImages(image.file='Data/Fish-Images', shapes.file='Data/Fish-Shapes-ex',
+digitizeImages(image.file='wing_pics', shapes.file='wing_pics',
                landmarks.ref=paste("LM", c(1:5), sep=""),
                curves.ref = "Data/example.curves.txt")
 ```
